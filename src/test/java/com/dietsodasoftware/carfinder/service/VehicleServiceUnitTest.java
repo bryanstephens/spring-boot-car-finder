@@ -30,4 +30,9 @@ public class VehicleServiceUnitTest {
         VehicleModel vehicleModel = new VehicleModel();
         vehicleService.createVehicle(vehicleModel, "2003");
     }
+
+    @Test
+    public void testFindOne() {
+        vehicleService.find(1L);
+    }
 }
